@@ -1,6 +1,13 @@
 #include "iostream"
 using namespace std;
 
+union lihua{
+    int age;
+};
+
 int main(){
-    cout<<"6666"<<endl;
+
+    union lihua li;
+    int i = li.age = 2;
+    cout<<i<<endl;
 }
