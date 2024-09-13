@@ -8,6 +8,6 @@ union lihua{
 int main(){
 
     union lihua li;
-    int i = li.age = 2;
+    int i = li.age = 56;
     cout<<i<<endl;
 }
