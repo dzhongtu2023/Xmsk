@@ -2,5 +2,5 @@
 using namespace std;
 
 int main(){
-    cout<<"6"<<endl;
+    cout<<"6666"<<endl;
 }
