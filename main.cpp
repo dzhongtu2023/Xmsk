@@ -1,9 +1,15 @@
 #include "iostream"
 #include "math.h"
 #include "time.h"
+
 using namespace std;
 
-int main(){
+void arrx(int arr[]) {
+    cout << sizeof(arr) / sizeof(int) << endl;
+    cout << arr << endl;
+};
+
+int main() {
     double d = pow(2, 3);
     double sqrt1 = sqrt(9);
     double ceil1 = ceil(9.8);
@@ -68,9 +74,59 @@ int main(){
 //        p++;
 //    }
 
-    int arr[]={1};
-    cout<<arr<<endl;
-    cout<<&arr<<endl;
-    cout<<&arr[0];
+//    int arr[]={1,2,3};
+//    cout<<arr[1200]<<endl;
+//    cout<<&arr<<endl;
+//    cout<<&arr[0]<<endl;
+//    cout<<sizeof (arr)/sizeof (int)<<endl;
+//    arrx(arr);
 
+//    int *p=&arr;
+//    cout<<*(&arr)<<endl;
+//    cout<<*p<<endl;
+//    cout<<p<<endl;
+//    for (int i = 0; i < 3; ++i) {
+//        cout<<*p++<<endl;
+//        p++;
+//    }
+
+//    cout<<arr+1<<endl;
+//    cout<<&arr+1;
+
+//    int a = 10;
+//    int* const pa = &a;//指针常量 地址不变,值可变
+//    int const* pb = &a;//常量指针 地址可变,值不变
+//    cout<<*pa<<endl;
+//    cout<<pa<<endl;
+//    cout<<*pb<<endl;
+//    cout<<pb<<endl;
+//    cout<<"--------------------"<<endl;
+//    int b = 20;
+//    pa=&b;
+//    *pa=b;
+//    pb=&b;
+//    *pb=b;
+//    cout<<pa<<endl;
+//    cout<<*pa<<endl;
+//    cout<<pb<<endl;
+//    cout<<*pb<<endl;
+
+//    int arr[] = {1, 2, 3};
+//    int* pa=arr;
+//    for (int i = 0; i <3; ++i) {
+//        cout<<*pa++<<endl;
+//    }
+
+//    int (*parr)[] = &arr;//数组指针
+//    for (int i = 0; i < 3; ++i) {
+//        cout << (*parr)[i] << endl;
+//    }
+
+    int a = 1;
+    int b = 2;
+    int c = 3;
+    int *arr[] = {&a, &b, &c};//指针数组
+    for (int i = 0; i < 3; ++i) {
+        cout << *arr[i] << endl;
+    }
 }
