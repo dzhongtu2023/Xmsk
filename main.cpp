@@ -9,6 +9,12 @@ void arrx(int arr[]) {
     cout << arr << endl;
 };
 
+int fun(int a){
+    int c=a*a;
+    return c;
+}
+
+
 int main() {
     double d = pow(2, 3);
     double sqrt1 = sqrt(9);
@@ -95,7 +101,7 @@ int main() {
 
 //    int a = 10;
 //    int* const pa = &a;//指针常量 地址不变,值可变
-//    int const* pb = &a;//常量指针 地址可变,值不变
+//    int const* pb = &a;//常量指针 值不变,地址可变
 //    cout<<*pa<<endl;
 //    cout<<pa<<endl;
 //    cout<<*pb<<endl;
@@ -122,11 +128,29 @@ int main() {
 //        cout << (*parr)[i] << endl;
 //    }
 
-    int a = 1;
-    int b = 2;
-    int c = 3;
-    int *arr[] = {&a, &b, &c};//指针数组
-    for (int i = 0; i < 3; ++i) {
-        cout << *arr[i] << endl;
-    }
+//    int a = 1;
+//    int b = 2;
+//    int c = 3;
+//    int *arr[] = {&a, &b, &c};//指针数组
+//    for (int i = 0; i < 3; ++i) {
+//        cout << *arr[i] << endl;
+//    }
+
+
+//    int(*pa)(int) =NULL;
+//    pa=fun;
+
+//    int arr[]={1,2,3};
+//    int (*p)[]=&arr;
+//    for (int i = 0; i < 3; ++i) {
+//        cout<<(*p)[i]<<endl;
+//    }
+//    int (*parr)[]=&arr;
+
+    int a=10;
+    int c=20;
+    int& b=a;
+    b=c;
+    cout<<a<<endl;
+    cout<<b<<endl;
 }
