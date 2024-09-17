@@ -9,8 +9,8 @@ void arrx(int arr[]) {
     cout << arr << endl;
 };
 
-int fun(int a){
-    int c=a*a;
+int fun(int a) {
+    int c = a * a;
     return c;
 }
 
@@ -24,13 +24,13 @@ int main() {
     time_t time1 = time(NULL);
 
 //    int arr[3][3]{
-//            {1,2,3},
-//            {4,5,6},
-//            {7,8,9}
+//            {1, 2, 3},
+//            {4, 5, 6},
+//            {7, 8, 9}
 //    };
 //    for (int i = 0; i < 3; ++i) {
 //        for (int j = 0; j < 3; ++j) {
-//            cout<<arr[i][j];
+//            cout << arr[i][j];
 //        }
 //    }
 
@@ -53,32 +53,32 @@ int main() {
 //    }
 
 //    int arr[3][3]{
-//            {1,2,3},
-//            {4,5,6},
-//            {7,8,9}
+//            {1, 2, 3},
+//            {4, 5, 6},
+//            {7, 8, 9}
 //    };
 //
-//    int (*p)[3]=arr;
+//    int (*p)[3] = arr;
 //    for (int i = 0; i < 3; ++i) {
 //        for (int j = 0; j < 3; ++j) {
-//            cout<<*(*p+j);
-//        }
-//        cout<<endl;
-//        p++;
-//    }
-
-//    int arr1[3]={1,2,3};
-//    int arr2[4]={2,3,4};
-//    int arr3[5]={3,4,5};
-//    int* arr[3]={arr1,arr2,arr3};
-//    int **p=arr;
-//    for (int i = 0; i < 3; ++i) {
-//        for (int j = 0; j < 3; ++j) {
-//            cout<<*(*p+j);
+//            cout << *(*p + j);
 //        }
 //        cout << endl;
 //        p++;
 //    }
+
+    int arr1[3] = {1, 2, 3};
+    int arr2[4] = {2, 3, 4};
+    int arr3[5] = {3, 4, 5};
+    int *arr[3] = {arr1, arr2, arr3};
+    int **p = arr;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << *(*p + j);
+        }
+        cout << endl;
+        p++;
+    }
 
 //    int arr[]={1,2,3};
 //    cout<<arr[1200]<<endl;
@@ -147,10 +147,10 @@ int main() {
 //    }
 //    int (*parr)[]=&arr;
 
-    int a=10;
-    int c=20;
-    int& b=a;
-    b=c;
-    cout<<a<<endl;
-    cout<<b<<endl;
+//    int a = 10;
+//    int c = 20;
+//    int &b = a;
+//    b = c;
+//    cout << a << endl;
+//    cout << b << endl;
 }
